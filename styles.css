@@ -1,0 +1,26 @@
+
+
+.primary-button {
+  background-color: violet;
+  border-radius: 5px;
+  color: white;
+  font-size: 24px;
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+.primary-button a {
+  color: white;
+}
+
+.Red {
+  background-color: #ff0000;
+}
+
+.Green {
+  background-color: #00ff00;
+}
+
+.Yellow {
+  background-color: #fff00f;
+}

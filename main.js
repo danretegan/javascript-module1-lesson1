@@ -1,13 +1,26 @@
-console.log("incepe aici");
+const containerEl = document.querySelector("#container");
 
-const test = {
-  a: 12,
-};
-
-test.b = 16;
-
-console.log("opreste aici");
-
-for (let i = 0; i < test.b; i++) {
-  console.log(i);
-}
+const colors = [
+  {
+    label: "Red",
+    color: "#ff0000",
+    isPrimary: true,
+  },
+  {
+    label: "Green",
+    color: "#00ff00",
+    isPrimary: true,
+  },
+  {
+    label: "Yellow",
+    color: "#fff00f",
+    isPrimary: false,
+  },
+];
+colors.forEach((element) => {
+  const buttonEl = document.createElement("button");
+  containerEl.append(buttonEl);
+  buttonEl.textContent = element.label;
+  buttonEl.classList.add("primary-button", element.label);
+  console.dir(buttonEl);
+});
