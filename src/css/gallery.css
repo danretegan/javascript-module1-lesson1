@@ -1,0 +1,44 @@
+/* Stilurile pentru card */
+.movie-card {
+  box-sizing: border-box;
+  width: 280px;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px; /* Spațierea între carduri */
+}
+
+/* Stilurile pentru titlu */
+.movie-card .movie-title {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+}
+
+/* Stilurile pentru descriere */
+.movie-card .movie-info {
+  color: #b92f2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
+}
+
+/* Stilurile pentru imaginea din card */
+.movie-card .movie-image {
+  width: 100%; /* Asigură că imaginea ocupă întreaga lățime a cardului */
+  height: auto; /* Asigură că imaginea ocupă întreaga înălțime a cardului */
+  object-fit: cover; /* Redimensionează imaginea astfel încât să acopere întregul container, păstrând proporțiile */
+  border-radius: 5px; /* Adaugă raza la colțurile imaginii pentru a se potrivi cu cardul */
+  box-shadow: 0 4px 8px 0 rgba(185, 47, 44, 0.2),
+    0 6px 20px 0 rgba(185, 47, 44, 0.19);
+  transition: transform 0.3s ease;
+}
+
+.movie-card .movie-image:hover,
+.movie-card .movie-image:focus {
+  transform: scale(1.03);
+}
